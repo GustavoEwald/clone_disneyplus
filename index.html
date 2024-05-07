@@ -2,16 +2,31 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.00">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clone Disney+</title>
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header__container">
+      <h1>
+        <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+      </h1>
+      <ul class="header__links">
+        <li class="header__links__item">
+          <a class="button button--secondary" href="#">Assine agora</a>
+        </li>
+        <li class="header__links__item">
+          <a class="button button--dark" href="">Entrar</a>
+        </li>
+      </ul>
+    </div>
+  </header>
   <section class="hero">
     <div class="hero__content">
-      <h1 class="hero__content__branding">
+      <div class="hero__content__branding">
         <img src="./dist/images/disneyplus.svg" alt="Disney+">
-      </h1>
+      </div>
       <h3 class="title--small">
         As melhores histórias em um só lugar.
       </h3>
@@ -25,12 +40,12 @@
       <ul class="hero__content__combos">
         <li class="hero__content__combos__combo">
           <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-          <button>Assine Agora</button>
+          <button class="button">Assine Agora</button>
           <span>R$ 45,90/mês*</span>
         </li>
         <li class="hero__content__combos__combo"x>
           <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
-          <button>Assine Agora</button>
+          <button class="button">Assine Agora</button>
           <span>R$ 45,90/mês*</span>
         </li>
       </ul>
@@ -39,5 +54,248 @@
       </p>
     </div>
   </section>
+  <section class="shows">
+    <nav class="shows_tabs">
+      <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+        Em breve
+      </button>
+      <button data-tab-button="populares" class="shows__tabs__button">
+        Mais populares
+      </button>
+      <button data-tab-button="star_plus" class="shows__tabs__button">
+        Mais no Star+
+      </button>
+    </nav>
+
+    <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+    </ul>
+
+    <ul data-tab-id="populares" class="shows__list">
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+    </ul>
+    
+    <ul data-tab-id="star_plus" class="shows__list">
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+    </ul>
+  </section>
+  <section class="plans">
+    <h2 class="title--big">Escolha seu plano</h2>
+
+    <ul class="plans__list">
+
+      <li class="plans__list__item">
+        <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
+        <strong class="title--small">R$ 27,90/mês*</strong>
+        <p class="text--big">
+          No disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+        </p>
+        <button class="button">Assine agora</button>
+      </li>
+
+      <li class="plans__list__item">
+        <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
+        <strong class="title--small">R$ 27,90/mês*</strong>
+        <p class="text--big">
+          No disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+        </p>
+        <button class="button">Assine agora</button>
+      </li>
+
+      <li class="plans__list__item">
+        <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
+        <strong class="title--small">R$ 27,90/mês*</strong>
+        <p class="text--big">
+          No disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+        </p>
+        <button class="button">Assine agora</button>
+      </li>
+    </ul>
+
+    <p class="text--small">
+      * O preço pode variar caso a assinatura seja feita através de outras plataformas. 
+    </p>
+
+  </section>
+  <section class="image-text-section">
+    <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com TV, tablet e celular">
+    <div class="image-text-section__text-container">
+      <h2 class="title">Assista do seu jeito</h2>
+      <p class="text--big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta modi magni asperiores totam ea minus consequatur sunt facere. In vitae assumenda exercitationem sed cum nam voluptatum fugiat soluta eos!</p>
+    </div>
+  </section>
+  <section class="image-text-section--image-full-width">
+    <img src="./dist/images/fundo_rei_leao.png" alt="Rei leão">
+    <div class="image-text-section--image-full-width__text-container">
+      <h2 class="title">Baixe filmes e séries</h2>
+      <p class="text--big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta modi magni asperiores totam ea minus consequatur sunt facere. In vitae assumenda exercitationem sed cum nam voluptatum fugiat soluta eos!</p>
+    </div>
+  </section>
+  <section class="available-devices">
+    <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+    <ul class="available-devices__list">
+      <li class="available-devices__list__item">
+        <img src="./dist/images/dispositivos/computador.png" alt="Computador">
+        <h4 class="title--small">Computador</h4>
+        <ul class="text">
+          <li>Chrome OS</li>
+          <li>MacOS<li>
+          <li>PC Windows</li>
+        </ul>
+      </li>
+      <li class="available-devices__list__item">
+        <img src="./dist/images/dispositivos/tv.png" alt="TV">
+        <h4 class="title--small">TV</h4>
+        <ul class="text">
+          <li>Chrome OS</li>
+          <li>MacOS<li>
+          <li>PC Windows</li>
+        </ul>
+      </li>
+      <li class="available-devices__list__item">
+        <img src="./dist/images/dispositivos/videogames.png" alt="videogames">
+        <h4 class="title--small">Videogames</h4>
+        <ul class="text">
+          <li>Chrome OS</li>
+          <li>MacOS<li>
+          <li>PC Windows</li>
+        </ul>
+      </li>
+      <li class="available-devices__list__item">
+        <img src="./dist/images/dispositivos/celular.png" alt="Celular">
+        <h4 class="title--small">Celular</h4>
+        <ul class="text">
+          <li>Chrome OS</li>
+          <li>MacOS<li>
+          <li>PC Windows</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2 class="title">Perguntas Frequentes</h2>
+    <ul class="faq__questions">
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nobis?
+        </div>
+        <div class="faq__questions__item__answer text--big">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est hic eos a asperiores fuga vel fugiat sapiente tempore corporis atque sint, nostrum deserunt similique nesciunt. Pariatur esse ullam accusantium.
+        </div>
+      </li>
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nobis?
+        </div>
+        <div class="faq__questions__item__answer text--big">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quas, architecto excepturi odit alias odio sint fugit iusto officia minima cumque harum consectetur. Fuga necessitatibus pariatur ex dolores, reiciendis sed?
+        </div>
+      </li>
+      <li class="faq__questions__item">
+        <div data-faq-question class="faq__questions__item__question">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nobis?
+        </div>
+        <div class="faq__questions__item__answer text--big">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quisquam distinctio dignissimos eos, officia nobis dolorem ipsa pariatur reprehenderit incidunt error tempora qui. Dolorum inventore veritatis autem nostrum vitae? Nisi?
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+      <ul class="footer__links">
+        <li class="footer__links__item">
+          <div class="language-selector">
+            <img src="./dist/images/icones/globe.svg" alt="Globo">
+            <select>
+              <option>English</option>
+              <option selected>Portugues</option>
+          </select>
+          </div>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="#">Termos e Condições de Uso</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="#">Politica de privacidade</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="#">Protecao de dados no Brasil</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="#">Anuncios personalizados</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="#">Dispositivos compativeis</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="#">Ajuda</a>
+        </li>
+        <li class="footer__links__item">
+          <a class="text--small" href="#">Sobre o Disney+</a>
+        </li>
+      </ul>
+      <p class="text--small">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eaque itaque illo beatae, molestiae veniam fuga 
+      </p>
+      <p class="text--small">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt quisquam ipsum magni nulla sequi, nostrum debitis aliquid est fugiat ea. Iste laboriosam omnis laudantium quidem beatae molestias vel dolores!
+      </p>
+    </div>
+  </footer>
+  <script src="./src/main.js"></script>
 </body>
 </html>
